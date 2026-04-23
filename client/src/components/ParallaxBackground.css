@@ -1,0 +1,50 @@
+/* src/components/ParallaxBackground.css */
+.parallax-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 150vh; /* Added to force scrollability to demonstrate the effect */
+  background-color: var(--bg-main);
+  overflow-x: hidden; /* Prevent horizontal scrolling from decorative shapes */
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Let clicks pass through */
+  z-index: 1;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  /* Moves at 100% speed naturally with the scroll */
+}
+
+/* Decorative Clay/Cloud Shapes */
+.shape {
+  position: absolute;
+  background: white;
+  border-radius: 50%; /* Cloud-like */
+  box-shadow: 
+    8px 8px 24px rgba(56, 189, 248, 0.2), 
+    inset -4px -8px 12px rgba(0, 0, 0, 0.05),
+    inset 4px 8px 12px rgba(255, 255, 255, 1);
+  opacity: 0.8;
+}
+
+.parallax-far .shape {
+  opacity: 0.5;
+  filter: blur(2px);
+  transform: scale(0.8);
+}
+
+.shape-1 { width: 120px; height: 120px; top: 5%; left: 15%; }
+.shape-2 { width: 180px; height: 180px; top: 40%; right: 15%; }
+.shape-3 { width: 100px; height: 100px; top: 80%; left: 25%; }
+
+.shape-4 { width: 250px; height: 250px; top: 15%; right: 5%; background: var(--clay-bg); }
+.shape-5 { width: 220px; height: 220px; top: 60%; left: 5%; background: var(--clay-bg); }

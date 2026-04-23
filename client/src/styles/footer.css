@@ -1,0 +1,86 @@
+/* src/styles/footer.css */
+.app-footer {
+  background-color: #002266;
+  color: white;
+  padding: 50px 40px 24px 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-brand {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.footer-tagline {
+  color: #a0aec0;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-col-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.footer-link {
+  color: #cbd5e0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #a0aec0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .app-footer {
+    padding: 40px 20px 20px 20px;
+  }
+  .footer-links {
+    gap: 40px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
